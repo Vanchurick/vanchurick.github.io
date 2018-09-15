@@ -1,0 +1,29 @@
+.fb {
+  color: darkblue;
+}
+
+.insta {
+  color: brown;
+}
+
+.twitter {
+  color: lightblue;
+}
+
+.vk {
+  color: blue;
+  text-decoration: line-through red;
+}
+
+.youtube {
+  color: red;
+}
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: blueviolet;
+}
+
