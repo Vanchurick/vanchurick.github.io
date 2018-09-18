@@ -1,0 +1,84 @@
+body {
+  width: 1200px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 58px;
+  margin-bottom: 79px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li a {
+  margin: 62px;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(98, 98, 98);
+}
+
+a:hover {
+  color: rgb(3, 169, 244);
+}
+
+.articles {
+  display: flex;
+  justify-content: center;
+  margin: 0px 150px 100px 150px;
+}
+
+div {
+  width: 420px;
+  height: 478px;
+  margin: 0px 60px 60px 60px;
+}
+
+.subscription {
+  font-family: "Ubuntu Light", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgb(180, 173, 158);
+}
+
+h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(98, 98, 98);
+}
+
+.description {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 14px;
+  color: rgb(98, 98, 98);
+}
+.last {
+  margin-bottom: 0px;
+}
+
+input {
+  width: 164px;
+  height: 60px;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(98, 98, 98);
+  background: transparent;
+  border: 1px solid rgb(98, 98, 98);
+  margin: 0px 10px 70px 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
