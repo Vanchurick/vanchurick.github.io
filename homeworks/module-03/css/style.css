@@ -1,22 +1,21 @@
-body {
-  width: 1200px;
+nav {
+  width: 100%;
+  margin: auto;
+  }
+
+ul {
+  text-align: center;
+  padding: 0px;
+  margin: 78px 0px 97px 0px;
+}
+
+li {
+  display: inline-block;
   margin: auto;
 }
 
-header {
-  display: flex;
-  justify-content: center;
-  margin-top: 58px;
-  margin-bottom: 79px;
-}
-
-ul {
-  list-style: none;
-  display: flex;
-}
-
-li a {
-  margin: 62px;
+a {
+  display: inline-block;
   font-family: "Playfair Display", sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -24,6 +23,7 @@ li a {
   text-transform: uppercase;
   text-decoration: none;
   color: rgb(98, 98, 98);
+  margin: 0px 61px 0px 61px;
 }
 
 a:hover {
@@ -31,15 +31,17 @@ a:hover {
 }
 
 .articles {
-  display: flex;
-  justify-content: center;
-  margin: 0px 150px 100px 150px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
 }
 
 div {
   width: 420px;
   height: 478px;
-  margin: 0px 60px 60px 60px;
+  margin: 0px 30px 134px 30px;
+  display: inline-block;
+  
 }
 
 .subscription {
@@ -48,20 +50,29 @@ div {
   font-weight: 500;
   text-transform: uppercase;
   color: rgb(180, 173, 158);
+  text-align: left;
+  margin-top: 28px;
+  margin-bottom: 28px;
 }
 
 h2 {
   font-family: "Playfair Display", sans-serif;
   font-size: 30px;
+  line-height: 30px;
   font-weight: 500;
   color: rgb(98, 98, 98);
+  text-align: left;
 }
 
 .description {
   font-family: "Playfair Display", sans-serif;
   font-size: 14px;
   color: rgb(98, 98, 98);
+  text-align: left;
+  height: 60px;
+  margin-top: 40px;
 }
+
 .last {
   margin-bottom: 0px;
 }
@@ -75,10 +86,10 @@ input {
   color: rgb(98, 98, 98);
   background: transparent;
   border: 1px solid rgb(98, 98, 98);
-  margin: 0px 10px 70px 10px;
+  margin: 60px 10px 70px 10px;
 }
 
 footer {
-  display: flex;
-  justify-content: center;
+    width: 100%;
+    text-align: center;
 }
