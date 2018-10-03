@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper {
+  width: 1600px;
+  height: 100%;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.logo {
+  float: left;
+  padding: 37px 244px 27px;
+}
+
+.logo::first-letter {
+  color: #1abc9c;
+  font-weight: 900;
+}
+
+.logo-name {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  color: #555252;
+  font-weight: 300;
+}
+
+nav {
+  float: right;
+}
+
+.menu {
+  float: right;
+  text-align: center;
+  list-style: none;
+  padding-right: 214px;
+  padding-top: 40px;
+}
+
+.menu-item {
+  float: left;
+}
+
+.menu-link {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 15px;
+  color: #0f0101;
+}
+
+.menu-link:hover {
+  color: #1abc9c;
+}
+
+.main-image {
+  width: 100%;
+  height: 600px;
+}
+
+.main-part {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.background-main-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(24, 24, 25, 0.5);
+}
+
+h1 {
+  position: absolute;
+  top: 220px;
+  left: 430px;
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.main-part p {
+  position: absolute;
+  top: 300px;
+  left: 430px;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.arrow {
+  position: absolute;
+  width: 104px;
+  height: 104px;
+  color: #ffffff;
+  background-color: rgba(85, 162, 144, 0.7);
+  font-size: 40px;
+  border: none;
+  top: 226px;
+}
+
+.left-arrow {
+  left: 245px;
+}
+
+.right-arrow {
+  right: 245px;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  color: #515151;
+  text-align: center;
+  padding-top: 95px;
+}
+
+h2::after {
+  content: "";
+  display: table;
+  width: 164px;
+  height: 7px;
+  background-color: #1abc9c;
+  margin: 30px auto;
+}
+
+.shop-menu {
+  padding: 50px 245px 100px;
+}
+
+.shop-product {
+  float: left;
+  list-style: none;
+  width: 255px;
+  height: 320px;
+  position: relative;
+  margin: 15px;
+}
+
+.shop-product:first-child {
+  margin-left: 0px;
+}
+
+.shop-product:last-child {
+  margin-right: 0px;
+}
+
+.product-image {
+  height: 100%;
+  width: 100%;
+}
+
+.product-name {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  height: 40px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 40px;
+  text-indent: 14px;
+  color: #ffffff;
+  background-color: #323232;
+}
+
+.price {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 55px;
+  height: 40px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #8c8c8c;
+}
+
+.pick-product {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 45px;
+  left: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+
+.buttons {
+  position: absolute;
+  width: 168px;
+  height: 110px;
+  top: 0;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  margin: auto;
+  text-align: center;
+}
+
+.action {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #ffffff;
+}
+
+.action:hover {
+  background-color: #1abc9c;
+}
+
+.like {
+  background-image: url(/img/icon1.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+}
+
+.change {
+  background-image: url(/img/icon2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+}
+
+.delay {
+  background-image: url(/img/icon3.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+}
+
+.add {
+  width: 154px;
+  height: 48px;
+  border: 1px solid #ffffff;
+  background-image: url(/img/add_to_cart.png);
+  background-repeat: no-repeat;
+  background-color: #323232;
+  background-position: center center;
+}
+
+.add:hover {
+  opacity: 0.8;
+}
+
+.shop-product:hover .pick-product {
+  opacity: 1;
+}
+
+.shop-product:hover .product-name {
+  background-color: #1abc9c;
+}
+
+.shop-product:hover .price {
+  background-color: #7fd9c7;
+}
+
+.price::before {
+  content: "\0024";
+}
+
+.shop::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.shop-menu::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  height: 90px;
+  background-color: #323232;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 90px;
+}
+
+.rights {
+  color: #3f9081;
+  text-decoration: none;
+}
