@@ -13,6 +13,7 @@ header::after {
 .wrapper {
   width: 1600px;
   height: 100%;
+  margin: 0 auto;
 }
 
 .uppercase {
@@ -39,6 +40,7 @@ header::after {
 
 nav {
   float: right;
+  margin-right: 13px;
 }
 
 .menu {
@@ -88,7 +90,7 @@ nav {
 
 h1 {
   position: absolute;
-  top: 220px;
+  top: 205px;
   left: 430px;
   font-family: "Roboto", sans-serif;
   font-size: 60px;
@@ -98,7 +100,7 @@ h1 {
 
 .main-part p {
   position: absolute;
-  top: 300px;
+  top: 290px;
   left: 430px;
   font-family: "Roboto", sans-serif;
   font-size: 24px;
@@ -111,18 +113,26 @@ h1 {
   width: 104px;
   height: 104px;
   color: #ffffff;
-  background-color: rgba(85, 162, 144, 0.7);
+  background-color: #1abc9c;
   font-size: 40px;
   border: none;
   top: 226px;
+  background-position: center center;
+background-repeat: no-repeat;
+}
+
+.arrow:hover {
+  opacity: 0.7;
 }
 
 .left-arrow {
   left: 245px;
+  background-image: url(../img/arrow1.png);
 }
 
 .right-arrow {
   right: 245px;
+   background-image: url(../img/arrow2.png);
 }
 
 h2 {
