@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-width {
+  width: 940px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.logo {
+  margin-top: 50px;
+  margin-left: 7px;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: #fed136;
+  font-family: "Wisdom Script", sans-serif;
+  font-size: 26px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.menu-item {
+  margin: 0 20px;
+}
+
+.menu-item:last-child {
+  margin-right: 0;
+}
+
+.menu-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #313131;
+  font-family: "Montserat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.menu-link:hover {
+  color: #fed136;
+}
+
+.menu-link:focus {
+  outline: none;
+  color: #fed136;
+}
+
+.services {
+  padding-top: 195px;
+  padding-bottom: 54px;
+  flex-grow: 1;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.sub-title {
+  text-align: center;
+  padding-top: 10px;
+  font-family: "Droid Serif", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  color: #777777;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1%;
+  list-style: none;
+  margin: 70px auto;
+}
+
+.services-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 29%;
+}
+
+.icon-case {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #fed136;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sprite {
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.sprite-basket {
+  width: 40px;
+  height: 39px;
+  background-position: -5px -5px;
+}
+
+.sprite-laptop {
+  width: 41px;
+  height: 35px;
+  background-position: -55px -5px;
+}
+
+.sprite-locked {
+  width: 29px;
+  height: 38px;
+  background-position: -55px -50px;
+}
+
+.service-name {
+  padding-top: 25px;
+  padding-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #222222;
+}
+
+.service-description {
+  text-align: center;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+}
+
+.contact-us-form {
+  height: 676px;
+  background-color: #222222;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.contact-us-form .title {
+  padding-top: 100px;
+  color: #fff;
+}
+
+.user-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 335px;
+  margin: 62px auto;
+}
+
+.user-data {
+  list-style: none;
+  height: 235px;
+}
+
+.user-data input:nth-child(-n + 3) {
+  width: 455px;
+  height: 50px;
+  margin: 15px;
+  margin-left: 0;
+  border-radius: 3px;
+  border: none;
+  padding: 0 20px;
+}
+
+.user-message {
+  width: 455px;
+  height: 210px;
+  margin: 15px;
+  margin-right: 0;
+  border-radius: 3px;
+  border: none;
+  padding: 16px 20px;
+  resize: none;
+}
+
+.user-form button[type="submit"] {
+  width: 240px;
+  height: 68px;
+  margin: 0 auto;
+  background-color: #fed136;
+  border: none;
+  border-radius: 3px;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+
+.user-form button[type="submit"]:hover {
+  box-shadow: 0 0 2px 2px #fff;
+}
+
+.user-form button[type="submit"]:focus {
+  box-shadow: 0 0 2px 2px #fff;
+}
+
+.placeholder-style::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #bbbbbb;
+  text-transform: uppercase;
+}
+
+.required:valid {
+  box-shadow: 0 0 10px 2px #17ef07;
+}
+
+.required:invalid {
+  box-shadow: 0 0 10px 2px #ef1207;
+}
+
+.background-map {
+  position: absolute;
+  right: 0;
+  top: 120px;
+}
