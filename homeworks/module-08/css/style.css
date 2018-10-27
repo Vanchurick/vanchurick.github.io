@@ -9,7 +9,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 540px;
+  min-height: 540px;
   background-color: rgb(26, 25, 21);
 }
 
@@ -283,7 +283,7 @@
 
 @media (min-width: 940px) {
   header {
-    width: 940px;
+    max-width: 940px;
     margin: 0 auto;
     padding-right: 0;
     padding-left: 0;
