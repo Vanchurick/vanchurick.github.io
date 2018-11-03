@@ -1,0 +1,192 @@
+.nav-item {
+  width: 90px;
+  height: 35px;
+  margin-top: 10px;
+  border: 2px solid transparent;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.nav-item:hover {
+  border: 2px solid #fff;
+  border-radius: 35px;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.background-img {
+  background-image: url(../img/friends.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 540px;
+  background-color: rgb(26, 25, 21);
+}
+
+.left {
+  left: 0;
+}
+
+.margin-top {
+  margin-top: 114px;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo-link {
+  font-size: 20px;
+}
+
+.main-title {
+  font-size: 30px;
+  width: 300px;
+  line-height: 40px;
+  margin-bottom: 2px;
+}
+
+.under-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  width: 230px;
+  line-height: 25px;
+  margin: 0 auto 10px;
+}
+
+.find,
+.see {
+  width: 280px;
+  height: 40px;
+  font-size: 14px;
+} 
+
+.find:hover {
+  background-color: #fff;
+  color: #ff4e50;
+
+}
+.see:hover {
+  background-color: #ff4e50;
+  color: #fff; 
+}
+
+.partners-title {
+  font-size: 22px;
+  color: #333333;
+}
+
+.partner-box {
+  max-width: 220px;
+}
+
+.photo {
+  width: 120px;
+  height: 120px;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  background-color: red;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  right: 0;
+  bottom: 0;
+  background-color: #ff4e50;
+}
+
+.name {
+  font-size: 14px;
+  color: #333333;
+}
+
+.about-partner {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.sprite {
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.sprite-chemistry {
+  width: 13px;
+  height: 16px;
+  background-position: -5px -5px;
+}
+
+.sprite-coffee {
+  width: 16px;
+  height: 17px;
+  background-position: -28px -5px;
+}
+
+.sprite-telegram {
+  width: 17px;
+  height: 16px;
+  background-position: -54px -5px;
+}
+
+.sprite-tv {
+  width: 16px;
+  height: 16px;
+  background-position: -54px -31px;
+}
+
+.orange {
+  background-color: #ffa507;
+}
+
+.aqua {
+  background-color: #1cd7ad;
+}
+
+.blue {
+  background-color: #4e73db;
+}
+
+@media (min-width: 768px) {
+  .main-title {
+    font-size: 52px;
+    width: 75%;
+    line-height: 70px;
+  }
+
+  .background-img {
+    min-height: 700px;
+  }
+
+  .under-title {
+    font-size: 24px;
+    width: 75%;
+  }
+
+  .find {
+    max-width: 230px;
+  }
+
+  .see {
+    width: 200px;
+  }
+
+  .margin-md-top {
+    margin-top: 114px;
+  }
+}
+
+@media (min-width:940px){
+  .wrapper {
+    max-width: 940px;
+  }
+
+  .main-title {
+    width: 60%;
+  }
+}
