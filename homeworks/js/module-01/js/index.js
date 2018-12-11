@@ -7,7 +7,8 @@ const enterLogin = 'Введите ваш логин!';
 const enterPassword = 'Введите пароль!';
 const wellcome = 'Добро пожаловать!';
 const cancel = 'Отменено пользователем!';
-const noAccess = 'Доступ запрещен, неверный пароль!';
+const noAccessByPassword = 'Доступ запрещен, неверный пароль!';
+const noAccessByLogin = 'Доступ запрещен, неверный логин!';
 
 let userInputLogin = prompt(enterLogin);
 
@@ -18,10 +19,10 @@ if (userInputLogin === adminLogin) {
  } else if ( userInputPassword === null ) {
      alert(cancel);
  } else {
-     alert(noAccess);
+     alert(noAccessByPassword);
  }
 } else if ( userInputLogin === null ) {
     alert(cancel);
 } else {
-    alert(noAccess)
+    alert(noAccessByLogin);
 }
