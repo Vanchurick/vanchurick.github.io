@@ -30,3 +30,27 @@ if (total === 0) {
 } else {
   alert(`Общая сумма чисел равна ${total}`);
 }
+
+//доп. задание
+
+const passwords = ["qwerty", "111qwe", "123123", "r4nd0mp4zzw0rd"];
+let attempts = 3;
+let check;
+let userPassword;
+
+do {
+  userPassword = prompt("Введите пароль!");
+  check = passwords.includes(userPassword);
+  if (passwords.includes(userPassword)) {
+    alert("Добро пожаловать!");
+  } else if (userPassword === null) {
+    alert("Отмена пользователем");
+  } else {
+    attempts = attempts - 1;
+    alert(`Неверный пароль, у вас осталось ${attempts} попыток`);
+  }
+} while (check === false && attempts !== 0 && userPassword !== null);
+
+if (attempts === 0) {
+  alert("У вас закончились попытки, аккаунт заблокирован!");
+}
