@@ -2,8 +2,8 @@
 
 const galleryItems = [
   {
-    preview: "./img/1.jpeg",
-    fullview: "./img/10.jpeg",
+    preview: "img/1.jpeg",
+    fullview: "img/10.jpeg",
     alt: "alt text 1"
   },
   {
