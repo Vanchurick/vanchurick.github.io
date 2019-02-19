@@ -2,33 +2,33 @@
 
 const galleryItems = [
   {
-    preview: "/img/1.jpeg",
-    fullview: "/img/10.jpeg",
+    preview: "./img/1.jpeg",
+    fullview: "./img/10.jpeg",
     alt: "alt text 1"
   },
   {
-    preview: "/img/2.jpeg",
-    fullview: "/img/20.jpeg",
+    preview: "./img/2.jpeg",
+    fullview: "./img/20.jpeg",
     alt: "alt text 2"
   },
   {
-    preview: "/img/3.jpeg",
-    fullview: "/img/30.jpeg",
+    preview: "./img/3.jpeg",
+    fullview: "./img/30.jpeg",
     alt: "alt text 3"
   },
   {
-    preview: "/img/4.jpeg",
-    fullview: "/img/40.jpeg",
+    preview: "./img/4.jpeg",
+    fullview: "./img/40.jpeg",
     alt: "alt text 4"
   },
   {
-    preview: "/img/5.jpeg",
-    fullview: "/img/50.jpeg",
+    preview: "./img/5.jpeg",
+    fullview: "./img/50.jpeg",
     alt: "alt text 5"
   },
   {
-    preview: "/img/6.jpeg",
-    fullview: "/img/60.jpeg",
+    preview: "./img/6.jpeg",
+    fullview: "./img/60.jpeg",
     alt: "alt text 6"
   }
 ];
