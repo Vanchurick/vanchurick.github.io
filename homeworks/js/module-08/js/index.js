@@ -73,6 +73,7 @@ createPreviewGallery(galleryItems);
 preview.firstChild.classList.add("choosen");
 
 function chooseFullImg(e) {
+  if(e.target.nodeName !== 'IMG') return;
   fullImg.setAttribute("src", e.target.getAttribute("data-fullview"));
 
   let previewGallery = document.querySelectorAll(".preview > li");
