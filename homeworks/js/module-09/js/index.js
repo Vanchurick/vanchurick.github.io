@@ -20,12 +20,12 @@ const timer = {
     if (this.startIsActive) {
       this.startIsActive = false;
       changeBtnName(this.startIsActive);
-      this.pauseTime = this.currentTime;
+      this.pauseTime = this.currentTime - this.startTime;
       clearInterval(this.id);
       return;
     }
 
-    this.startTime = Date.now();
+    this.startTime = this.pauseTime ? Date.now() - this.pauseTime : Date.now();
     this.id = setInterval(() => {
       this.currentTime = Date.now();
       this.deltaTime = this.currentTime - this.startTime;
@@ -39,6 +39,7 @@ const timer = {
   stopTimer() {
     clearInterval(this.id);
     this.deltaTime = 0;
+    this.pauseTime = null;
     this.startIsActive = false;
     showTime(formatTime(this.deltaTime));
     changeBtnName(this.startIsActive, this.deltaTime);
