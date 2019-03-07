@@ -38,8 +38,14 @@ function getUserById() {
 }
 
 function filterID(arr) {
+    
+   
   let inputID = getUser.previousElementSibling.value.trim();
   let result = arr.filter(el => el.id === inputID);
+  if(result.length === 0) {
+      aboutUser.previousElementSibling.textContent = "This User does not exist in the database"; 
+      aboutUser.textContent = "";
+      return;}
   let HTML = `
     <p>User name: ${result[0].name}</p>
     <p>Age: ${result[0].age}</p>

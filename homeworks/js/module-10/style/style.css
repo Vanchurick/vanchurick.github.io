@@ -29,6 +29,7 @@ button {
     background-color: tomato;
     border: none;
     color: #fff;
+    cursor: pointer;
 }
 
 input {
