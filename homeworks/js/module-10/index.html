@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <ul class="operations">
+          <li class="operations__item">
+            <button class="js-getAllUsers">All Users</button>
+          </li>
+          <li class="operations__item">
+            <input type="text" placeholder="Enter User ID" />
+            <button class="js-getuser">Find User by ID</button>
+          </li>
+          <li class="operations__item">
+            <form action="POST" class="addnew">
+              <input type="text" placeholder="Enter User Name" id="newname" />
+              <input type="text" placeholder="Enter User Age" id="newage" />
+              <button>Add New User</button>
+            </form>
+          </li>
+          <li class="operations__item">
+            <input type="text" placeholder="Enter User ID" />
+            <button class="remove">Remove User</button>
+          </li>
+          <li class="operations__item">
+            <form action="" class="update">
+              <input type="text" placeholder="Enter User ID" id="update__id" />
+              <input type="text" placeholder="Enter New User Name" id="update__name" />
+              <input type="text" placeholder="Enter New User Age" id="update__age" />
+              <button>Update User Data</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+      <div class="oneuser">
+        <h2>User</h2>
+        <div class="aboutuser"></div>
+      </div>
+      <div class="allusers">
+        <h2>All Users</h2>
+        <ul class="allusers__list"></ul>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

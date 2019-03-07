@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 900px;
+    height: 725px;
+    overflow:hidden;
+    padding: 50px;
+    
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+button {
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: tomato;
+    border: none;
+    color: #fff;
+}
+
+input {
+    height: 30px;
+}
+
+.operations {
+    
+    border: 2px solid #000;
+}
+
+.operations__item {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+
+.oneuser {
+    border: 2px solid #372;
+    width: 50%;
+    padding-top: 20px;
+    text-align: center;
+    
+
+}
+.allusers {
+    width: 50%;
+    border: 2px solid #256;
+    text-align: center;
+    padding-top: 20px;
+    overflow: auto;
+}
+
+.userdata {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 2px solid #789;
+    text-align: left;
+}
