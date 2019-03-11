@@ -4,16 +4,22 @@
     box-sizing: border-box;
 }
 
+
+
 .container {
     display: flex;
     justify-content: space-between;
     width: 100%;
     min-width: 900px;
-    height: 725px;
+    height: 830px;
     overflow:hidden;
     padding: 50px;
     
     
+}
+
+.operations {
+    background-color: #256;
 }
 
 form {
@@ -34,6 +40,7 @@ button {
 
 input {
     height: 30px;
+    margin: 10px 0 5px;
 }
 
 .operations {
@@ -49,19 +56,22 @@ input {
 }
 
 .oneuser {
-    border: 2px solid #372;
+    border: 5px solid #372;
     width: 50%;
     padding-top: 20px;
     text-align: center;
+  
     
 
 }
 .allusers {
     width: 50%;
-    border: 2px solid #256;
+    border: 5px solid #372;
     text-align: center;
     padding-top: 20px;
     overflow: auto;
+    background-color: #257;
+    color: yellow;
 }
 
 .userdata {

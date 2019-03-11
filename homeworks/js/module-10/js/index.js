@@ -5,6 +5,7 @@ function getAllUsers() {
   fetch(URL_ALLUSERS)
     .then(response => response.json())
     .then(data => createHTMLAllUsers(data.data))
+    .then(onResolve, onReject)
     .catch(err => console.log(err));
 }
 
@@ -34,6 +35,7 @@ function getUserById() {
   fetch(URL_ALLUSERS)
     .then(response => response.json())
     .then(data => filterID(data.data))
+    .then(onResolve, onReject)
     .catch(err => console.log(err));
 }
 
@@ -79,6 +81,7 @@ function addUser(e) {
   fetch(URL_ADDUSER, options)
     .then(response => response.json())
     .then(data => createHTMLOneUser(data.data))
+    .then(onResolve, onReject)
     .catch(err => console.log(err));
   addNewUser.reset();
   aboutUser.previousElementSibling.textContent = "Info about new user";
@@ -107,12 +110,15 @@ function removeUser() {
   })
     .then(response => response.json())
     .then(data => createHTMLRemoveUser(data.data))
+    .then(onResolve, onReject)
     .catch(error => console.log("ERROR: " + error));
 
   aboutUser.previousElementSibling.textContent = "This user has been deleted";
 }
 
+
 function createHTMLRemoveUser(obj) {
+  
   let HTML = `
     <p>User name: ${obj.name}</p>
     <p>Age: ${obj.age}</p>
@@ -147,6 +153,7 @@ function updateUser(e) {
   })
     .then(response => response.json())
     .then(data => createHTMLRemoveUser(data.data))
+    .then(onResolve, onReject)
     .catch(error => console.log("ERROR: " + error));
 
   aboutUser.previousElementSibling.textContent = "Updated User";
@@ -155,3 +162,15 @@ function updateUser(e) {
 
 let updateUserForm = document.querySelector(".update");
 updateUserForm.addEventListener("submit", updateUser);
+
+//////////////////
+const onResolve = () => {
+  console.log("Good!");
+};
+
+const onReject = (data) => {
+  alert('Error! Something wrong! Please, check information!');
+  aboutUser.innerHTML = '';
+};
+
+
