@@ -104,7 +104,11 @@ form.addEventListener("submit", filterProducts);
 let btnClear = document.querySelector('[type="reset"]');
 btnClear.addEventListener("click", resetForm);
 
-const filter = { size: [], color: [], release_date: [] };
+let filter = {
+  size: [],
+  color: [],
+  release_date: []
+};
 
 const templateCard = document.querySelector("#card-temlate").innerHTML.trim();
 const temp = Handlebars.compile(templateCard);
@@ -124,10 +128,11 @@ function resetForm() {
 
 function createFilter() {
   filter.size = sizes.filter(el => el.checked).map(el => +el.value);
+  if(filter.size.length === 0) filter.size = sizes.map(el => +el.value);
   filter.color = colors.filter(el => el.checked).map(el => el.value);
-  filter.release_date = releaseDates
-    .filter(el => el.checked)
-    .map(el => +el.value);
+  if(filter.color.length === 0) filter.color = colors.map(el => el.value);
+  filter.release_date = releaseDates.filter(el => el.checked).map(el => +el.value);
+  if(filter.release_date.length === 0) filter.release_date = releaseDates.map(el => +el.value);  
 }
 
 function filterResult(arr) {
@@ -146,17 +151,9 @@ function filterResult(arr) {
 }
 
 function createHtmml(obj) {
-  if (
-    filter.size.length === 0 ||
-    filter.color.length === 0 ||
-    filter.release_date.length === 0
-  ) {
-    alert(
-      "Filter parameters shood be checked!"
-    );
-    return;
-  }
   if (obj.length === 0) alert("No matches! Choose another filter parameters!");
   galleryCard.innerHTML = obj.reduce((acc, el) => acc + temp(el), "");
   matches.textContent = `Matches: ${obj.length}`;
 }
+
+
