@@ -124,36 +124,64 @@ function filterProducts(e) {
 function resetForm() {
   form.reset();
   galleryCard.innerHTML = laptops.reduce((acc, el) => acc + temp(el), "");
+  matches.textContent = "";
+}
+
+function resetFilter() {
+  filter.size = [];
+  filter.color = [];
+  filter.release_date = [];
 }
 
 function createFilter() {
-  filter.size = sizes.filter(el => el.checked).map(el => +el.value);
-  if(filter.size.length === 0) filter.size = sizes.map(el => +el.value);
-  filter.color = colors.filter(el => el.checked).map(el => el.value);
-  if(filter.color.length === 0) filter.color = colors.map(el => el.value);
-  filter.release_date = releaseDates.filter(el => el.checked).map(el => +el.value);
-  if(filter.release_date.length === 0) filter.release_date = releaseDates.map(el => +el.value);  
+  resetFilter();
+  let checked = document.querySelectorAll("input[type=checkbox]:checked");
+  [...checked].forEach(el => filter[el.name].push(el.value));
+  
+  // filter.size = sizes.filter(el => el.checked).map(el => +el.value);
+  // if (filter.size.length === 0) filter.size = sizes.map(el => +el.value);
+  // filter.color = colors.filter(el => el.checked).map(el => el.value);
+  // if (filter.color.length === 0) filter.color = colors.map(el => el.value);
+  // filter.release_date = releaseDates
+  // .filter(el => el.checked)
+  // .map(el => +el.value);
+  // if (filter.release_date.length === 0) filter.release_date = releaseDates.map(el => +el.value);
 }
 
 function filterResult(arr) {
-  let a = arr.reduce((acc, el) => {
-    if (
-      filter.size.includes(el.size) &&
-      filter.color.includes(el.color) &&
-      filter.release_date.includes(el.release_date)
-    ) {
-      acc.push(el);
-    }
-    return acc;
-  }, []);
-
-  return a;
+  // let a = arr.reduce((acc, el) => {
+  //   if (
+  //     filter.size.includes(el.size) &&
+  //     filter.color.includes(el.color) &&
+  //     filter.release_date.includes(el.release_date)
+  //   ) {
+  //     acc.push(el);
+  //   }
+  //   return acc;
+  // }, []);
+  // console.log(a);
+  // return a;
+  let result;
+  return result = arr
+    .filter(
+      el =>
+        filter.size.includes(String(el.size)) || filter.size.length === 0
+    )
+    .filter(
+      el =>
+        filter.color.includes(String(el.color)) || filter.color.length === 0
+    )
+    .filter(
+      el =>
+        filter.release_date.includes(String(el.release_date)) ||
+        filter.release_date.length === 0
+    );
+    
+    
 }
 
-function createHtmml(obj) {
+function createHtmml(arr) {
   if (obj.length === 0) alert("No matches! Choose another filter parameters!");
-  galleryCard.innerHTML = obj.reduce((acc, el) => acc + temp(el), "");
-  matches.textContent = `Matches: ${obj.length}`;
+  galleryCard.innerHTML = arr.reduce((acc, el) => acc + temp(el), "");
+  matches.textContent = `Matches: ${arr.length}`;
 }
-
-
