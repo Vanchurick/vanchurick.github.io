@@ -181,7 +181,7 @@ function filterResult(arr) {
 }
 
 function createHtmml(arr) {
-  if (obj.length === 0) alert("No matches! Choose another filter parameters!");
+  if (arr.length === 0) alert("No matches! Choose another filter parameters!");
   galleryCard.innerHTML = arr.reduce((acc, el) => acc + temp(el), "");
   matches.textContent = `Matches: ${arr.length}`;
 }
