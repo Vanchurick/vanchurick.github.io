@@ -1,0 +1,109 @@
+body {
+  background-color: rgb(12, 6, 6);
+}
+
+.container {
+  padding: 30px;
+  height: 100%;
+}
+
+#form {
+  min-width: 300px;
+  width: 25%;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+
+  h2 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 34px;
+    color: #cad15e;
+  }
+
+  input {
+    background-color: #cad15e;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    color: #4a0000;
+  }
+
+  input:focus {
+    outline: none;
+    box-shadow: 0px 0px 38px 10px #2a5800;
+  }
+
+  button {
+    background-color: #2a5800;
+    color: #cad15e;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    height: 30px;
+  }
+
+  button:hover{
+    background-color: #cad15e;
+    color: #2a5800;
+  }
+
+  button:focus{
+    outline: none;
+    box-shadow: 0px 0px 38px 10px #2a5800;
+  }
+}
+
+.bookmarks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.bookmark {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 200px;
+  border-radius: 10%;
+  margin: 2%;
+  position: relative;
+  padding: 10px;
+
+  img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 38px 20px #cad15e;
+  }
+
+  img:hover {
+    box-shadow: 0px 0px 38px 20px #ffa5a9;
+  }
+
+  .remove {
+    width: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: #cad15e;
+    color: #4a0000;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .remove:hover {
+    background-color: #df0000;
+    color: #000;
+  }
+
+  h3{
+    text-transform: uppercase;
+    font-style: oblique;
+    font-weight: 700;
+    color: #cad15e;
+  }
+}
