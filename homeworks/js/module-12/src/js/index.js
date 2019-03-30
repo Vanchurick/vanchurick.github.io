@@ -68,6 +68,7 @@ function isBookmarkExist(arr, obj) {
 }
 
 function updateView() {
+  if(localStorage.getItem("bookmarks") === null) return;
   bookmarks = JSON.parse(localStorage.getItem("bookmarks"));
   createCardsInHTML(bookmarks);
 }
