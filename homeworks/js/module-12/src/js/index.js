@@ -1,6 +1,6 @@
 "use strict";
 const keyAPI = "5c97dd5c0903cf2826553dde5f86a5c02a277376713fd";
-const URL = `http://api.linkpreview.net/?key=${keyAPI}&q=https://`;
+const URL = `https://api.linkpreview.net/?key=${keyAPI}&q=https://`;
 let form = document.querySelector("#form");
 let input = form.querySelector("input");
 input.setAttribute("placeholder", "www.google.com");
@@ -16,7 +16,7 @@ function createBookmark(e) {
   if (input.value.length === 0) return;
   if (!inputValidation(input.value)) {
     form.reset();
-    return alert("Закладка не валидная");
+    return alert("Неверные символы");
   }
 
   fetch(URL + input.value)

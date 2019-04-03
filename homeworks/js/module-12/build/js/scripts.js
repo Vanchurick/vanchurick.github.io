@@ -9,7 +9,7 @@ function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
 
 var keyAPI = "5c97dd5c0903cf2826553dde5f86a5c02a277376713fd";
-var URL = "http://api.linkpreview.net/?key=".concat(keyAPI, "&q=https://");
+var URL = "https://api.linkpreview.net/?key=".concat(keyAPI, "&q=https://");
 var form = document.querySelector("#form");
 var input = form.querySelector("input");
 input.setAttribute("placeholder", "www.google.com");
@@ -26,7 +26,7 @@ function createBookmark(e) {
 
   if (!inputValidation(input.value)) {
     form.reset();
-    return alert("Закладка не валидная");
+    return alert("Неверные символы");
   }
 
   fetch(URL + input.value).then(function (response) {
