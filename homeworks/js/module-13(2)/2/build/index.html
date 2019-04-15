@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bookmarks</title>
+  <link href="styles.css?991c0879b1286e12d09c" rel="stylesheet"></head>
+  <body>
+    <div class="container">
+      <h1 class="container__title">Bookmarks</h1>
+      <form class="form js-form" action="">
+        <h2 class="form__title">Enter bookmark</h2>
+        <input type="text" class="form__input js-input" />
+        <button class="form__button js-button">Save bookmark</button>
+      </form>
+      <div class="container__bookmarks js-bookmarks"></div>
+      <template id="bookmark-template">
+        <div id="{{ id }}" class="bookmark js-bookmark">
+          <a href="{{ url }}"
+            ><img src="{{ image }}" alt="" title="{{ description }}"
+          /></a>
+          <h3 class="">{{ title }}</h3>
+          <button class="js-delete-button">Delete</button>
+        </div>
+      </template>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+  <script type="text/javascript" src="bundle.js?991c0879b1286e12d09c"></script></body>
+</html>

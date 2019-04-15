@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container {
+  text-align: center; }
+  .container__bookmarks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+
+.form {
+  width: 200px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 2px solid black; }
+
+.bookmark {
+  width: 150px;
+  border: 2px solid green;
+  margin: 10px; }
+  .bookmark img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; }
+
